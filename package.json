@@ -1,0 +1,28 @@
+{
+  "name": "darktxt",
+  "title": "dark.txt",
+  "id": "jid1-ADDefLkIZXJwew",
+  "description": "read .txt files in darkness",
+  "author": "",
+  "license": "GNU GPL 3.0",
+  "version": "0.1",
+
+  "preferences": [
+    {
+      "name": "mode",
+      "type": "menulist",
+      "title": "Mode",
+      "value": 0,
+      "options": [
+        {
+	  "value": "0",
+	  "label": "Activate for all .txt documents"
+	},
+	{
+	  "value": "1",
+	  "label": "Activate when button clicked"
+	}
+      ]
+    }
+  ]		 
+}
