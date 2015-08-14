@@ -1,11 +1,16 @@
 {
   "name": "darktxt",
   "title": "dark.txt",
-  "id": "jid1-ADDefLkIZXJwew",
+  "id": "{f41a79c6-cd18-4b53-a361-ce0e5c4a6415}",
   "description": "read .txt files in darkness",
-  "author": "",
+  "author": "Austin Hartzheim",
   "license": "GNU GPL 3.0",
-  "version": "0.1",
+  "version": "0.1.1",
+  "main": "lib/main.js",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
 
   "preferences": [
     {
