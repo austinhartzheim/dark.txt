@@ -1,10 +1,20 @@
+self.port.on("attachCss", function(url) {
+    // Create a <link> element for a resource:// URL to a CSS file
+    console.log(url);
+    var style = document.createElement("link");
+    style.type = 'text/css';
+    style.rel = 'stylesheet';
+    style.href = url;
+    document.head.appendChild(style);
+});
+
 self.port.on("toggleColor", function() {
-    if (document.body.style.backgroundColor == 'black' && document.body.style.color == 'white') {
-        document.body.style.backgroundColor = 'white';
-        document.body.style.color = 'black';
+    // Toggle the class to enable/disable the CSS theme.
+    if (document.body.className.match(/(?:^|\s)darktxt-enabled(?!\S)/)) {
+	document.body.className = document.body.className
+	    .replace(/(?:^|\s)darktxt-enabled(?!\S)/g , '');
     } else {
-        document.body.style.backgroundColor = 'black';
-        document.body.style.color = 'white';
+	document.body.className += " darktxt-enabled";
     }
 });
 
