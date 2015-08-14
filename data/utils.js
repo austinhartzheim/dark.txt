@@ -1,6 +1,5 @@
 self.port.on("attachCss", function(url) {
     // Create a <link> element for a resource:// URL to a CSS file
-    console.log(url);
     var style = document.createElement("link");
     style.type = 'text/css';
     style.rel = 'stylesheet';
