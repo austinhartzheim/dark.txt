@@ -1,3 +1,3 @@
-Switch the background of your plain text backgrounds to black. It's that simple.
+Switch the background of your plain text files to black. It's that simple.
 
-Perfect for reading RFCs and other documentation in low-night environments (such as late-night hacking).
+Perfect for reading RFCs and other documentation in low-light environments (such as late-night hacking).
