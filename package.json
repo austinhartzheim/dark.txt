@@ -28,6 +28,38 @@
 	  "label": "Activate when button clicked"
 	}
       ]
+    },
+    {
+      "name": "theme",
+      "type": "menulist",
+      "title": "Theme",
+      "value": "darktxt-whiteblack",
+      "options": [
+        {
+	  "value": "darktxt-whiteblack",
+	  "label": "White on Black"
+        },
+	{
+	  "value": "darktxt-greenblack",
+	  "label": "Green on Black"
+	},
+	{
+	  "value": "darktxt-pinkblack",
+	  "label": "Pink on Black"
+        },
+	{
+	  "value": "darktxt-yellowblack",
+	  "label": "Yellow on Black"
+        },
+	{
+	  "value": "darktxt-redblack",
+	  "label": "Red on Black"
+        },
+	{
+	  "value": "darktxt-whitegray",
+	  "label": "White on Gray"
+        }
+      ]
     }
   ]		 
 }

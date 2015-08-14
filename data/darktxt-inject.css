@@ -1,4 +1,27 @@
-body.darktxt-enabled {
+/* Black Backgrounds */
+body.darktxt-whiteblack {
     background: black;
+    color: white;
+}
+body.darktxt-greenblack {
+    background: black;
+    color: rgb(0,255,0);
+}
+body.darktxt-pinkblack {
+    background: black;
+    color: rgb(255, 49, 85);
+}
+body.darktxt-yellowblack {
+    background: black;
+    color: yellow;
+}
+body.darktxt-redblack {
+    background: black;
+    color: red;
+}
+
+/* Gray Backgrounds */
+body.darktxt-whitegray {
+    background: #202020;
     color: white;
 }
