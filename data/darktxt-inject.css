@@ -1,27 +1,66 @@
+/* Overall Styles */
+body.darktxt-enabled a {
+    /* Force links to be visible if the theme does not change their color */
+    text-decoration: underline;
+}
+@-moz-document domain("wikipedia.org") {
+    /* Corrections for Wikipedia, especially PNG math */
+    .mwe-math-fallback-image-inline {
+	transition: padding 0.25s;
+    }
+    body.darktxt-enabled .mwe-math-fallback-image-inline {
+	background: #ddd;
+	padding: 2px;
+    }
+    body.darktxt-enabled div.body ul li a,
+    body.darktxt-enabled .vectorTabs a {
+	text-decoration: none;
+    }
+}
+@-moz-document domain("youtube.com") {
+    /* Corrections for YouTube */
+    .ytp-gradient-bottom {
+	/* This gradient obstructs the video on mouseover */
+	display: none;
+    }
+}
+
+
 /* Black Backgrounds */
-body.darktxt-whiteblack {
+body.darktxt-whiteblack,
+body.darktxt-whiteblack * {
     background: black;
     color: white;
 }
-body.darktxt-greenblack {
+body.darktxt-whiteblack a {
+    color: #ddd;
+    text-decoration: #858585;
+}
+
+body.darktxt-greenblack,
+body.darktxt-greenblack * {
     background: black;
     color: rgb(0,255,0);
 }
-body.darktxt-pinkblack {
+body.darktxt-pinkblack,
+body.darktxt-pinkblack * {
     background: black;
     color: rgb(255, 49, 85);
 }
-body.darktxt-yellowblack {
+body.darktxt-yellowblack,
+body.darktxt-yellowblack * {
     background: black;
     color: yellow;
 }
-body.darktxt-redblack {
+body.darktxt-redblack,
+body.darktxt-redblack * {
     background: black;
     color: red;
 }
 
 /* Gray Backgrounds */
-body.darktxt-whitegray {
+body.darktxt-whitegray,
+body.darktxt-whitegray * {
     background: #202020;
     color: white;
 }
