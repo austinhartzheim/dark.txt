@@ -5,24 +5,27 @@ body.darktxt-enabled a {
 }
 @-moz-document domain("wikipedia.org") {
     /* Corrections for Wikipedia, especially PNG math */
-    .mwe-math-fallback-image-inline {
-	transition: padding 0.25s;
-    }
-    body.darktxt-enabled .mwe-math-fallback-image-inline {
-	background: #ddd;
-	padding: 2px;
-    }
     body.darktxt-enabled div.body ul li a,
     body.darktxt-enabled .vectorTabs a {
 	text-decoration: none;
     }
+    body.darktxt-enabled h2 {
+	background: black !important;
+	border: 0px !important;
+    }
 }
 @-moz-document domain("youtube.com") {
     /* Corrections for YouTube */
-    .ytp-gradient-bottom {
+    body.darktxt-enabled .ytp-gradient-bottom {
 	/* This gradient obstructs the video on mouseover */
 	display: none;
     }
+}
+
+/* Corrections for math on MediaWiki instances */
+body.darktxt-enabled img.mwe-math-fallback-image-inline {
+    background: white;
+    filter: invert(100);
 }
 
 
