@@ -32,8 +32,8 @@ body.darktxt-enabled img.mwe-math-fallback-image-inline {
 /* Black Backgrounds */
 body.darktxt-whiteblack,
 body.darktxt-whiteblack * {
-    background: black;
-    color: white;
+    background: black !important;
+    color: white !important;
 }
 body.darktxt-whiteblack a {
     color: #858585;
@@ -42,28 +42,28 @@ body.darktxt-whiteblack a {
 
 body.darktxt-greenblack,
 body.darktxt-greenblack * {
-    background: black;
-    color: rgb(0,255,0);
+    background: black !important;
+    color: rgb(0,255,0) !important;
 }
 body.darktxt-pinkblack,
 body.darktxt-pinkblack * {
-    background: black;
-    color: rgb(255, 49, 85);
+    background: black !important;
+    color: rgb(255, 49, 85) !important;
 }
 body.darktxt-yellowblack,
 body.darktxt-yellowblack * {
-    background: black;
-    color: yellow;
+    background: black !important;
+    color: yellow !important;
 }
 body.darktxt-redblack,
 body.darktxt-redblack * {
-    background: black;
-    color: red;
+    background: black !important;
+    color: red !important;
 }
 
 /* Gray Backgrounds */
 body.darktxt-whitegray,
 body.darktxt-whitegray * {
-    background: #202020;
-    color: white;
+    background: #202020 !important;
+    color: white !important;
 }
