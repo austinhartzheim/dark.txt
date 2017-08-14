@@ -1,69 +1,82 @@
 /* Overall Styles */
 body.darktxt-enabled a {
-    /* Force links to be visible if the theme does not change their color */
-    text-decoration: underline;
+  /* Force links to be visible if the theme does not change their color */
+  text-decoration: underline;
 }
-@-moz-document domain("wikipedia.org") {
-    /* Corrections for Wikipedia, especially PNG math */
-    body.darktxt-enabled div.body ul li a,
-    body.darktxt-enabled .vectorTabs a {
-	text-decoration: none;
-    }
-    body.darktxt-enabled h2 {
-	background: black !important;
-	border: 0px !important;
-    }
-}
-@-moz-document domain("youtube.com") {
-    /* Corrections for YouTube */
-    body.darktxt-enabled .ytp-gradient-bottom {
-	/* This gradient obstructs the video on mouseover */
-	display: none;
-    }
-}
-
-/* Corrections for math on MediaWiki instances */
-body.darktxt-enabled img.mwe-math-fallback-image-inline {
-    background: white;
-    filter: invert(100);
-}
-
 
 /* Black Backgrounds */
 body.darktxt-whiteblack,
-body.darktxt-whiteblack * {
-    background: black !important;
-    color: white !important;
+body.darktxt-whiteblack *:not(:empty) {
+  background: black !important;
+  color: white !important;
 }
 body.darktxt-whiteblack a {
-    color: #858585;
-    text-decoration: none;
+  color: #858585;
+  text-decoration: none;
 }
 
 body.darktxt-greenblack,
-body.darktxt-greenblack * {
-    background: black !important;
-    color: rgb(0,255,0) !important;
+body.darktxt-greenblack :not(:empty) {
+  background: black !important;
+  color: rgb(0,255,0) !important;
 }
 body.darktxt-pinkblack,
-body.darktxt-pinkblack * {
-    background: black !important;
-    color: rgb(255, 49, 85) !important;
+body.darktxt-pinkblack *:not(:empty) {
+  background: black !important;
+  color: rgb(255, 49, 85) !important;
 }
 body.darktxt-yellowblack,
-body.darktxt-yellowblack * {
-    background: black !important;
-    color: yellow !important;
+body.darktxt-yellowblack *:not(:empty) {
+  background: black !important;
+  color: yellow !important;
 }
 body.darktxt-redblack,
-body.darktxt-redblack * {
-    background: black !important;
-    color: red !important;
+body.darktxt-redblack *:not(:empty) {
+  background: black !important;
+  color: red !important;
 }
 
 /* Gray Backgrounds */
 body.darktxt-whitegray,
-body.darktxt-whitegray * {
-    background: #202020 !important;
-    color: white !important;
+body.darktxt-whitegray *:not(:empty) {
+  background: #202020 !important;
+  color: white !important;
+}
+
+/* *** Corrections/Enhancements for popular websites *** */
+
+/* Corrections for math on MediaWiki instances */
+body.darktxt-enabled img.mwe-math-fallback-image-inline {
+  background: white;
+  filter: invert(100);
+}
+
+/* Corrections for Wikipedia */
+@-moz-document domain("wikipedia.org") {
+  body.darktxt-enabled div.body ul li a,
+  body.darktxt-enabled .vectorTabs a {
+    text-decoration: none;
+  }
+
+  body.darktxt-enabled h2 {
+    background: black !important;
+    border: 0px !important;
+  }
+  body.darktxt-enabled #content {
+    border: 1px solid white !important;
+  }
+}
+
+/* Corrections for YouTube */
+@-moz-document domain("youtube.com") {
+  /* Force transparent background on video controls; otherwise they obscure
+     the video on mouseover. */
+  body.darktxt-enabled .ytp-chrome-bottom,
+  body.darktxt-enabled .ytp-chrome-bottom * {
+    background: transparent !important;
+  }
+  body.darktxt-enabled .ytp-chrome-bottom .ytp-swatch-background-color,
+  body.darktxt-enabled .ytp-chrome-bottom .ytp-swatch-background-color-secondary {
+    background-color: gray !important;
+  }
 }
