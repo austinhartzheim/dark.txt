@@ -6,13 +6,13 @@
 <body>
   <form>
     <p><label>Mode
-      <select id="mode">
+      <select id="mode" class="option-selector">
         <option value="0">Automatically activate for all text documents</option>
         <option value="1">Require button click to activate</option>
       </select>
     </label></p>
     <p><label>Theme
-      <select id="theme">
+      <select id="theme" class="option-selector">
         <option value="darktxt-whiteblack">White on Black</option>
         <option value="darktxt-greenblack">Green on Black</option>
         <option value="darktxt-pinkblack">Pink on Black</option>
@@ -21,8 +21,6 @@
         <option value="darktxt-whitegray">White on Gray</option>
       </select>
     </label></p>
-
-    <button type="submit">Save</button>
   </form>
 
   <script src="options.js"></script>
