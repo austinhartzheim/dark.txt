@@ -18,7 +18,8 @@
   "permissions": [
     "<all_urls>",
     "tabs",
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
 
   "browser_action": {
@@ -42,7 +43,8 @@
     }
   ],
 
-  "web_accessible_resources": [
-    "data/darktxt-inject.css"
-  ]
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  }
 }
