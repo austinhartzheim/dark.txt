@@ -32,7 +32,7 @@
   },
 
   "background": {
-    "scripts": ["lib/main.js"]
+    "scripts": ["background.js"]
   },
 
   "content_scripts": [
